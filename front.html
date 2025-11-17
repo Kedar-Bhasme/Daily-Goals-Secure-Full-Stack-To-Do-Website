@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Goals</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-content">
+        <h1>Daily Goals</h1>
+        <p>Stay productive & inspired every single day.</p>
+
+        <div class="input-section">
+            <input id="taskInput" type="text" placeholder="Add a new task...">
+            <button id="addBtn">Add</button>
+        </div>
+
+        <div class="task-list-container">
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="user-info" style="position:absolute; top:20px; right:20px; display:flex; flex-direction:column; align-items:flex-end; gap:5px;">
+            <div style="display:flex; align-items:center; gap:10px;">
+                <img id="userLogo" src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="User" style="width:40px; height:40px; border-radius:50%; cursor:pointer;">
+                <span id="usernameDisplay" style="display:none; font-weight:bold;"></span>
+            </div>
+            <div id="historyBox" style="
+    display: none; 
+    width: 250px; 
+    padding: 12px; 
+    background: linear-gradient(145deg, #ffd8a8cc, #b0e4b0cc, #a0c4ffcc); /* soft gradient matching main bg */
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
+    border: 1px solid rgba(0,0,0,0.05);
+">
+    <h4 style="margin-bottom: 8px; color: #333;">History (Last 10 Completed)</h4>
+    <ul id="historyList" style="list-style: none; padding-left: 5px; max-height: 200px; overflow-y: auto; color: #222;"></ul>
+</div>
+
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
