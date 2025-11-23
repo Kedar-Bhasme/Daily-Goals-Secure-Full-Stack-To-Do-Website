@@ -1,14 +1,14 @@
 {
-  "name": "to-do-app-2",
+  "name": "to-do-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "app to be productive",
   "main": "login.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["to-do","productive"],
+  "author": "Kedar Bhasme",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
